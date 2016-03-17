@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Time Sink</title>
+  </head>
+  <body>
+    <h2>Time Wasting Articles Here!</h2>
+    <ul>
+      <% @articles.each do |article| %>
+        <li><%= article[0] %>, <%= article[1]%>, <a href="http://<%=article[2]%>" target="_blank"><%=article[2]%></a></li>
+      <% end %>
+    </ul>
+
+    <a href="articles/new">Add an article</a></a>
+  </body>
+</html>
